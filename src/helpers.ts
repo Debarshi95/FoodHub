@@ -28,7 +28,7 @@ const cuisines: Array<string> = [
 ];
 const getRandomCuisineName = (): string => {
   const random = Math.round(Math.random() * 10) + 1;
-  console.log(random);
+  // console.log(random);
   return cuisines[random];
 };
 export interface Cuisine {

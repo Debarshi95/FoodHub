@@ -47,7 +47,7 @@ const Home: React.FC = () => {
     if (searchQuery && searchQuery !== "") {
       cuisineName = searchQuery;
     }
-    console.log(cuisineName);
+    // console.log(cuisineName);
     getSearchResults(cuisineName)
       .then((res) => res.json())
       .then((data) => {
@@ -58,7 +58,7 @@ const Home: React.FC = () => {
         setLoading(false);
       });
   }, [getSearchResults, searchQuery]);
-  console.log(cuisines);
+  // console.log(cuisines);
 
   if (loading) return <Loader />;
   return (
@@ -75,6 +75,7 @@ const Home: React.FC = () => {
           width: "85%",
           margin: "2rem auto",
           minHeight: "40%",
+          justifyContent: "space-evenly",
         }}
       >
         {cuisines && cuisines.length > 0 ? (

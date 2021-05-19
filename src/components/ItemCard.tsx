@@ -14,6 +14,7 @@ const Card = styled(Link)`
   /* border: 1.6px solid gray;*/
   border-radius: 14px;
   margin: 20px 10px;
+
   &:hover {
     opacity: 0.7;
   }
